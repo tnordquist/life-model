@@ -44,7 +44,7 @@ public class World {
   public void tick() {
     for (int row = 0; row < terrain.length; row++) {
       for (int col = 0; col < terrain[row].length; col++) {
-        next[row][col] = terrain[row][col].next(terrain, row, col);
+        next[row][col] = terrain[row][col].next(terrain, row, col);//?
       }
     }
     synchronized (lock) {
